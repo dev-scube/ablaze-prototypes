@@ -7,11 +7,11 @@ import { useLocation } from "wouter";
 export default function Prototype1() {
   const [, setLocation] = useLocation();
 
-  const products = [
-    { id: 1, name: "Pulseira Half-Persian", price: 189.90, image: "/product1.jpg", badge: "Bestseller" },
-    { id: 2, name: "Pulseira Byzantine Azul", price: 225.90, image: "/product2.jpg", badge: "Novo" },
-    { id: 3, name: "Pulseira European 4-1", price: 159.90, image: "/product3.jpg", badge: "Destaque" },
-  ];
+    const products = [
+      { id: 1, name: "Pulseira Half-Persian", price: 189.90, image: `${import.meta.env.BASE_URL}product1.jpg`, badge: "Bestseller" },
+      { id: 2, name: "Pulseira Byzantine Azul", price: 225.90, image: `${import.meta.env.BASE_URL}product2.jpg`, badge: "Novo" },
+      { id: 3, name: "Pulseira European 4-1", price: 159.90, image: `${import.meta.env.BASE_URL}product3.jpg`, badge: "Destaque" },
+    ];
 
   return (
     <div className="min-h-screen bg-white">
@@ -29,7 +29,7 @@ export default function Prototype1() {
             </Button>
             
             <div className="flex items-center gap-2">
-              <img src="/logo-ablaze.webp" alt="ABLAZE" className="h-12" />
+              <img src={`${import.meta.env.BASE_URL}logo-ablaze.webp`} alt="ABLAZE" className="h-12" />
             </div>
 
             <nav className="hidden md:flex items-center gap-8">
@@ -80,7 +80,7 @@ export default function Prototype1() {
             <div className="relative">
               <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
                 <img 
-                  src="/product1.jpg" 
+                  src={`${import.meta.env.BASE_URL}product1.jpg`} 
                   alt="Pulseira artesanal" 
                   className="w-full h-full object-cover"
                 />
@@ -204,8 +204,8 @@ export default function Prototype1() {
               </div>
             </div>
             <div className="grid grid-cols-2 gap-4">
-              <img src="/product2.jpg" alt="Processo" className="rounded-lg shadow-lg" />
-              <img src="/product3.jpg" alt="Detalhe" className="rounded-lg shadow-lg mt-8" />
+              <img src={`${import.meta.env.BASE_URL}product2.jpg`} alt="Processo" className="rounded-lg shadow-lg" />
+              <img src={`${import.meta.env.BASE_URL}product3.jpg`} alt="Detalhe" className="rounded-lg shadow-lg mt-8" />
             </div>
           </div>
         </div>
@@ -216,7 +216,7 @@ export default function Prototype1() {
         <div className="container">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <img src="/logo-ablaze.webp" alt="ABLAZE" className="h-16 mb-4" />
+              <img src={`${import.meta.env.BASE_URL}logo-ablaze.webp`} alt="ABLAZE" className="h-16 mb-4" />
               <p className="text-slate-400 text-sm">
                 Acessórios artesanais em aço inoxidável de alta qualidade.
               </p>

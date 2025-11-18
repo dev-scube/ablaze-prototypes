@@ -10,10 +10,10 @@ export default function Prototype2() {
   const [sidebarOpen, setSidebarOpen] = useState(true);
 
   const products = [
-    { id: 1, name: "Pulseira Half-Persian", price: 189.90, image: "/product1.jpg", rating: 5 },
-    { id: 2, name: "Pulseira Byzantine Azul", price: 225.90, image: "/product2.jpg", rating: 5 },
-    { id: 3, name: "Pulseira European 4-1", price: 159.90, image: "/product3.jpg", rating: 5 },
-    { id: 4, name: "Pulseira Japanese 6-1", price: 199.90, image: "/product1.jpg", rating: 5 },
+    { id: 1, name: "Pulseira Half-Persian", price: 189.90, image: `${import.meta.env.BASE_URL}product1.jpg`, rating: 5 },
+    { id: 2, name: "Pulseira Byzantine Azul", price: 225.90, image: `${import.meta.env.BASE_URL}product2.jpg`, rating: 5 },
+    { id: 3, name: "Pulseira European 4-1", price: 159.90, image: `${import.meta.env.BASE_URL}product3.jpg`, rating: 5 },
+    { id: 4, name: "Pulseira Japanese 6-1", price: 199.90, image: `${import.meta.env.BASE_URL}product1.jpg`, rating: 5 },
   ];
 
   return (
@@ -21,8 +21,8 @@ export default function Prototype2() {
       {/* Sidebar */}
       <aside className={`${sidebarOpen ? 'w-64' : 'w-0'} transition-all duration-300 bg-black border-r border-slate-800 flex-shrink-0 overflow-hidden`}>
         <div className="p-6">
-          <div className="mb-8">
-            <img src="/logo-ablaze.webp" alt="ABLAZE Chainmail" className="h-20" />
+            <div className="mb-8">
+            <img src={`${import.meta.env.BASE_URL}logo-ablaze.webp`} alt="ABLAZE Chainmail" className="h-20" />
           </div>
 
           <nav className="space-y-2">
@@ -87,7 +87,7 @@ export default function Prototype2() {
         <section className="relative h-[600px] overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-black via-slate-900/50 to-transparent z-10"></div>
           <img 
-            src="/product1.jpg" 
+            src={`${import.meta.env.BASE_URL}product1.jpg`} 
             alt="Hero" 
             className="absolute inset-0 w-full h-full object-cover opacity-40"
           />
@@ -224,7 +224,7 @@ export default function Prototype2() {
         <footer className="bg-black border-t border-slate-800 px-8 py-12">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
-              <img src="/logo-ablaze.webp" alt="ABLAZE Chainmail" className="h-16 mb-4" />
+              <img src={`${import.meta.env.BASE_URL}logo-ablaze.webp`} alt="ABLAZE Chainmail" className="h-16 mb-4" />
               <p className="text-sm text-slate-400">
                 Acessórios artesanais em aço inoxidável de alta qualidade, 
                 feitos à mão com paixão e dedicação.

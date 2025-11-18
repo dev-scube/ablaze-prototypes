@@ -71,7 +71,7 @@ export default function Prototype4() {
                 Voltar
               </Button>
               <div className="h-8 w-px bg-slate-200"></div>
-              <img src="/logo-ablaze.webp" alt="ABLAZE" className="h-12" />
+              <img src={`${import.meta.env.BASE_URL}logo-ablaze.webp`} alt="ABLAZE" className="h-12" />
               <div>
                 <h1 className="text-xl font-bold text-slate-900">Dashboard</h1>
                 <p className="text-xs text-slate-500">Análise de Vendas e Performance</p>

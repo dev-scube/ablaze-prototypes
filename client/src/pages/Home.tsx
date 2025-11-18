@@ -9,7 +9,7 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-br from-orange-50 to-slate-100">
       <div className="container py-16">
         <div className="text-center mb-12">
-          <img src="/logo-ablaze.webp" alt="ABLAZE Chainmail" className="h-24 mx-auto mb-6" />
+          <img src={`${import.meta.env.BASE_URL}logo-ablaze.webp`} alt="ABLAZE Chainmail" className="h-24 mx-auto mb-6" />
           <h1 className="text-4xl font-bold text-slate-900 mb-4">
             ABLAZE Chainmail - Protótipos
           </h1>

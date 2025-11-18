@@ -8,9 +8,9 @@ export default function Prototype3() {
   const [, setLocation] = useLocation();
 
   const products = [
-    { id: 1, name: "Pulseira Half-Persian", price: 189.90, image: "/product1.jpg" },
-    { id: 2, name: "Pulseira Byzantine Azul", price: 225.90, image: "/product2.jpg" },
-    { id: 3, name: "Pulseira European 4-1", price: 159.90, image: "/product3.jpg" },
+    { id: 1, name: "Pulseira Half-Persian", price: 189.90, image: `${import.meta.env.BASE_URL}product1.jpg` },
+    { id: 2, name: "Pulseira Byzantine Azul", price: 225.90, image: `${import.meta.env.BASE_URL}product2.jpg` },
+    { id: 3, name: "Pulseira European 4-1", price: 159.90, image: `${import.meta.env.BASE_URL}product3.jpg` },
   ];
 
   return (
@@ -32,7 +32,7 @@ export default function Prototype3() {
             </Button>
 
             <div className="flex items-center gap-2">
-              <img src="/logo-ablaze.webp" alt="ABLAZE" className="h-12" />
+              <img src={`${import.meta.env.BASE_URL}logo-ablaze.webp`} alt="ABLAZE" className="h-12" />
             </div>
 
             <div className="flex items-center gap-4">
@@ -53,7 +53,7 @@ export default function Prototype3() {
       {/* Hero Editorial */}
       <section className="relative h-[700px] overflow-hidden bg-black">
         <img 
-          src="/product1.jpg" 
+          src={`${import.meta.env.BASE_URL}product1.jpg`} 
           alt="Hero" 
           className="absolute inset-0 w-full h-full object-cover opacity-60"
         />
@@ -116,8 +116,8 @@ export default function Prototype3() {
             </div>
             <div className="relative">
               <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl">
-                <img 
-                  src="/product2.jpg" 
+                  <img 
+                    src={`${import.meta.env.BASE_URL}product2.jpg`} 
                   alt="Artesão trabalhando" 
                   className="w-full h-full object-cover"
                 />
@@ -265,7 +265,7 @@ export default function Prototype3() {
         <div className="container">
           <div className="grid md:grid-cols-4 gap-12 mb-12">
             <div>
-              <img src="/logo-ablaze.webp" alt="ABLAZE" className="h-16 mb-4" />
+              <img src={`${import.meta.env.BASE_URL}logo-ablaze.webp`} alt="ABLAZE" className="h-16 mb-4" />
               <p className="text-slate-400 leading-relaxed">
                 Acessórios artesanais em aço inoxidável que combinam tradição e modernidade.
               </p>
