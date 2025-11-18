@@ -18,7 +18,7 @@ function Router() {
       <Route path={"/prototype2"} component={Prototype2} />
       <Route path={"/prototype3"} component={Prototype3} />
       <Route path={"/prototype4"} component={Prototype4} />
-      <Route path={"/404"} component={NotFound} />
+      {/* <Route path={"/404"} component={NotFound} /> */}
       {/* Final fallback route */}
       <Route component={NotFound} />
     </Switch>
