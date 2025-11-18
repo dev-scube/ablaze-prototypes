@@ -9,6 +9,8 @@ import { vitePluginManusRuntime } from "vite-plugin-manus-runtime";
 const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime()];
 
 export default defineConfig({
+  // Base path for GitHub Pages (project site). Adjust if your repo name changes.
+  base: '/ablaze-prototypes/',
   plugins,
   resolve: {
     alias: {
