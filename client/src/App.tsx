@@ -13,12 +13,12 @@ import Prototype4 from "./pages/Prototype4";
 function Router() {
   return (
     <Switch>
-      <Route path={"/"} component={Home} />
-      <Route path={"/prototype1"} component={Prototype1} />
-      <Route path={"/prototype2"} component={Prototype2} />
-      <Route path={"/prototype3"} component={Prototype3} />
-      <Route path={"/prototype4"} component={Prototype4} />
-      {/* <Route path={"/404"} component={NotFound} /> */}
+      <Route path={"/ablaze-chainmail"} component={Home} />
+      <Route path={"/ablaze-chainmail/prototype1"} component={Prototype1} />
+      <Route path={"/ablaze-chainmail/prototype2"} component={Prototype2} />
+      <Route path={"/ablaze-chainmail/prototype3"} component={Prototype3} />
+      <Route path={"/ablaze-chainmail/prototype4"} component={Prototype4} />
+      <Route path={"/ablaze-chainmail/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
     </Switch>
